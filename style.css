@@ -57,6 +57,8 @@ p {
 
 .title {
 	color: var(--dark-blue);
+	font-size: 24px;
+	font-weight: 900;
 }
 
 .para {
