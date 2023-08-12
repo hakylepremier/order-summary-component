@@ -1,0 +1,140 @@
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+	--pale-blue: #e0e8ff;
+	--bright-blue: #3829e0;
+	--very-pale-blue: #f5f7ff;
+	--desaturated-blue: #7280a7;
+	--dark-blue: #1f2f56;
+}
+
+body {
+	background-color: var(--pale-blue);
+	background-image: url("./images/pattern-background-desktop.svg");
+	background-size: contain;
+	background-position: top center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	height: 100dvh;
+	font-family: "Red Hat Display", sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+h1,
+h2,
+p {
+	margin: 0;
+}
+
+.main {
+	max-width: 450px;
+	height: 700px;
+	display: flex;
+	flex-direction: column;
+}
+
+.img {
+	width: 100%;
+	border-radius: 20px 20px 0 0;
+}
+
+.text {
+	box-sizing: border-box;
+	padding: 48px;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	/* align-items: center; */
+	border-radius: 0 0 20px 20px;
+	justify-content: space-between;
+}
+
+.title {
+	color: var(--dark-blue);
+}
+
+.para {
+	color: var(--desaturated-blue);
+}
+
+.plan {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100px;
+	padding: 0 20px;
+	background-color: var(--very-pale-blue);
+	border-radius: 10px;
+}
+
+.plan__main {
+	display: flex;
+	align-items: center;
+	gap: 18px;
+}
+
+.plan__details {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.plan__heading {
+	font-size: 16px;
+	color: var(--dark-blue);
+	text-align: left;
+}
+
+.plan__amount {
+	color: var(--desaturated-blue);
+}
+
+.btn--plan {
+	color: var(--bright-blue);
+	font-weight: 500;
+}
+
+.btn--pay {
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	background-color: var(--bright-blue);
+	padding: 18px 0;
+	border-radius: 10px;
+	color: white;
+	font-size: 16px;
+	font-weight: 700;
+	box-shadow: 0 15px 15px rgba(56, 41, 224, 0.2); /* right bottom blur color */
+}
+
+.btn--cancel {
+	text-decoration: none;
+	color: var(--desaturated-blue);
+	font-weight: 700;
+}
+
+@media screen and (max-width: 600px) {
+	body {
+		background-image: url("./images/pattern-background-mobile.svg");
+	}
+
+	.main {
+		max-width: 328px;
+		height: 568px;
+	}
+
+	.text {
+		padding: 24px;
+	}
+
+	.plan {
+		height: 80px;
+		padding: 0 14px;
+	}
+}
