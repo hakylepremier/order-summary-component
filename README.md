@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github repo](https://your-solution-url.com)
-- Live Site URL: [Live site link](https://your-live-site-url.com)
+- Solution URL: [Github repo](https://github.com/hakylepremier/order-summary-component)
+- Live Site URL: [Live site link](https://hakylepremier.github.io/order-summary-component/)
 
 ## My process
 
