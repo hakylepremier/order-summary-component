@@ -7,6 +7,7 @@
 	--very-pale-blue: #f5f7ff;
 	--desaturated-blue: #7280a7;
 	--dark-blue: #1f2f56;
+	--purplish: #766cf1;
 }
 
 body {
@@ -100,6 +101,12 @@ p {
 .btn--plan {
 	color: var(--bright-blue);
 	font-weight: 500;
+	transition: text-decoration 0.5s;
+}
+
+.btn--plan:hover {
+	text-decoration: none;
+	color: var(--purplish);
 }
 
 .btn--pay {
@@ -113,12 +120,22 @@ p {
 	font-size: 16px;
 	font-weight: 700;
 	box-shadow: 0 15px 15px rgba(56, 41, 224, 0.2); /* right bottom blur color */
+	transition: all 0.2s;
+}
+
+.btn--pay:hover {
+	background-color: var(--purplish);
 }
 
 .btn--cancel {
 	text-decoration: none;
 	color: var(--desaturated-blue);
 	font-weight: 700;
+	transition: all 0.5s;
+}
+
+.btn--cancel:hover {
+	color: var(--dark-blue);
 }
 
 @media screen and (max-width: 600px) {
